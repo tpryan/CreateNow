@@ -1,0 +1,228 @@
+/**
+ * CreateNow theme for reveal.js.
+ * 
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+@font-face {
+	font-family: 'Source San Pro';
+	src: url('../../lib/font/adobe/sourcesanspro-regular-webfont.eot');
+	src: url('../../lib/font/adobe/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/adobe/sourcesanspro-regular-webfont.woff') format('woff'),
+		 url('../../lib/font/adobe/sourcesanspro-regular-webfont.ttf') format('truetype'),
+		 url('../../lib/font/adobe/sourcesanspro-regular-webfont.svg#SourceCodePro') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Source San Pro';
+	src: url('../../lib/font/adobe/sourcesanspro-it-webfont.eot');
+	src: url('../../lib/font/adobe/sourcesanspro-it-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/adobe/sourcesanspro-it-webfont.woff') format('woff'),
+		 url('../../lib/font/adobe/sourcesanspro-it-webfont.ttf') format('truetype'),
+		 url('../../lib/font/adobe/sourcesanspro-it-webfont.svg#SourceCodePro') format('svg');
+
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../../lib/font/adobe/sourcesanspro-bold-webfont.eot');
+	src: url('../../lib/font/adobe/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/adobe/sourcesanspro-bold-webfont.woff') format('woff'),
+		 url('../../lib/font/adobe/sourcesanspro-bold-webfont.ttf') format('truetype'),
+		 url('../../lib/font/adobe/sourcesanspro-bold-webfont.svg#SourceCodePro') format('svg');
+
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Source San Pro Black';
+	src: url('../../lib/font/adobe/sourcesanspro-black-webfont.eot');
+	src: url('../../lib/font/adobe/sourcesanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/adobe/sourcesanspro-black-webfont.woff') format('woff'),
+		 url('../../lib/font/adobe/sourcesanspro-black-webfont.ttf') format('truetype'),
+		 url('../../lib/font/adobe/sourcesanspro-black-webfont.svg#SourceCodeProBlack') format('svg');
+
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Source San Pro Extra Light';
+	src: url('../../lib/font/adobe/sourcesanspro-extralight-webfont.eot');
+	src: url('../../lib/font/adobe/sourcesanspro-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/adobe/sourcesanspro-extralight-webfont.woff') format('woff'),
+		 url('../../lib/font/adobe/sourcesanspro-extralight-webfont.ttf') format('truetype'),
+		 url('../../lib/font/adobe/sourcesanspro-extralight-webfont.svg#SourceCodeProLight') format('svg');
+
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Source San Pro Light';
+	src: url('../../lib/font/adobe/sourcesanspro-light-webfont.eot');
+	src: url('../../lib/font/adobe/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/adobe/sourcesanspro-light-webfont.woff') format('woff'),
+		 url('../../lib/font/adobe/sourcesanspro-light-webfont.ttf') format('truetype'),
+		 url('../../lib/font/adobe/sourcesanspro-light-webfont.svg#SourceCodeProLight') format('svg');
+
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Source Code Pro';
+	src: url('../../lib/font/adobe/sourcecodepro-regular-webfont.eot');
+	src: url('../../lib/font/adobe/sourcecodepro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/adobe/sourcecodepro-regular-webfont.woff') format('woff'),
+		 url('../../lib/font/adobe/sourcecodepro-regular-webfont.ttf') format('truetype'),
+		 url('../../lib/font/adobe/sourcecodepro-regular-webfont.svg#SourceCodePro') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+$mainFont: "Source San Pro";
+$headingFont: "Source San Pro Black";
+$codeFont: "Source Code Pro";
+$lightFont: "Source San Pro Extra Light";
+
+$backgroundColor: #000000;
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( rgba(30,30,30,1), rgba(0,0,0,1) );
+}
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+html.title-slide body {
+	background:url("../../img/background-title.jpg");
+	background-position:center;
+	background-size: 100% 100%; 
+	
+}
+html.title-slide body .reveal .slides section section{
+		background: none;
+	}
+
+.reveal{
+	
+
+	section{
+		//border: 1px solid red;
+	}
+	code{
+		font-family: $codeFont;
+	}
+	.hashtag{
+		position: absolute;
+		bottom: 0;
+		right: 10px;
+		font-size: 1rem;
+		font-family: $lightFont;
+	}
+	
+
+	.transparent{
+		border: none;
+		background: none;
+		box-shadow: none;
+	}
+
+	.titleslide{
+		text-align: left;
+
+		header{
+			background: rgba(100,100,100,.5);
+			padding: 2rem 1rem 3rem 1rem;
+			
+			div{
+				float: left;
+				h1{
+					font-size: 3rem;
+					font-family: $lightFont;
+					text-transform: none;
+					letter-spacing: -.15rem;
+					margin: 0 0 .5rem 0;
+
+				}
+				h2{
+					color: #666;
+					font-size: 1.8rem;
+					letter-spacing: -.1rem;
+					margin: 0 0 0 .3rem;
+					width: 100%;
+					text-transform: none;
+					font-weight: normal;
+					font-family: $mainFont;
+
+				}
+			}	
+			.mnemonic{
+				width: 6rem;
+				float: left;
+				margin: 0 1rem 0 0;
+				vertical-align: top;
+			}
+			&:after{
+				clear:both;
+				display: table;
+				content: "";
+			}
+		}
+		
+	}
+
+}
+
+
+
+.adobelogo{
+	right: 10%;
+	position: absolute;
+}
+
+#bird{
+	position: absolute;
+	width: 400px;
+	bottom: -100px;
+	right: -200px;
+}
+#logo{
+	margin-top: -50px;
+}
+
+.question{
+	h1{
+		font-size:  3em;
+		line-height: 1.5;
+		text-align: center;
+	}
+}
+
+.mneumonic-large{
+	width: 400px;
+	-webkit-filter: drop-shadow(5px 5px 7px #666);
+}
