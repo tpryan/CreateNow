@@ -4,6 +4,12 @@
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 
+ @mixin clearfix() {
+	clear: both;
+	display: table;
+	content: "";
+}
+
 
 // Default mixins and settings -----------------
 @import "../template/mixins";
@@ -117,12 +123,20 @@ $backgroundColor: #000000;
 @import "../template/theme";
 // ---------------------------------------------
 
-html.title-slide body {
+html.red-slide body {
 	background:url("../../img/background-title.jpg");
 	background-position:center;
 	background-size: 100% 100%; 
 	
 }
+
+html.green-slide body {
+	background:url("../../img/background-green.jpg");
+	background-position:center;
+	background-size: 100% 100%; 
+	
+}
+
 html.title-slide body .reveal .slides section section{
 		background: none;
 	}
@@ -151,8 +165,30 @@ html.title-slide body .reveal .slides section section{
 		box-shadow: none;
 	}
 
-	.titleslide{
+	.redslide{
 		text-align: left;
+		h1{
+			font-size: 3rem;
+			font-family: $lightFont;
+		}
+
+		.timeline{
+			div{
+				float: left;
+				font-size: 1.2rem;
+				width: 40%;
+				text-align: center;
+			}
+			div:first-child{
+				width: 12%;
+			}
+			div:last-child{
+				width: 48%;
+			}
+			&:after{
+				@include clearfix();
+			}
+		}			
 
 		header{
 			background: rgba(100,100,100,.5);
@@ -161,8 +197,6 @@ html.title-slide body .reveal .slides section section{
 			div{
 				float: left;
 				h1{
-					font-size: 3rem;
-					font-family: $lightFont;
 					text-transform: none;
 					letter-spacing: -.15rem;
 					margin: 0 0 .5rem 0;
@@ -193,6 +227,53 @@ html.title-slide body .reveal .slides section section{
 			}
 		}
 		
+	}
+
+	.greenslide{
+		font-family: $lightFont;
+		font-size: 1rem;
+
+		.box{
+			width: 12rem;
+			text-align: left;
+			position: absolute;
+		}
+		.intro{
+			font-size: 2.8rem;
+			span{
+				font-size: 1.8rem;
+			}
+		}
+		strong{
+			text-transform: uppercase;
+			color: #1EB1ED;
+			font-family: $mainFont;
+		}
+		.box1{
+			left: 1rem;
+			top:23rem;
+		}
+		.box2{
+			left: 10rem;
+			top:13rem;
+		}
+		.box3{
+			left: 18rem;
+			top:20rem;
+		}
+		.box4{
+			right: 20rem;
+			top:16rem;
+		}
+		.box5{
+			right: 7rem;
+			top:13rem;
+		}
+		.box6{
+			right: 0rem;
+			top:21rem;
+			width: 16rem;
+		}
 	}
 
 }

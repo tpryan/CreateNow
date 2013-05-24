@@ -182,8 +182,13 @@ body {
   -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
-html.title-slide body {
+html.red-slide body {
   background: url("../../img/background-title.jpg");
+  background-position: center;
+  background-size: 100% 100%; }
+
+html.green-slide body {
+  background: url("../../img/background-green.jpg");
   background-position: center;
   background-size: 100% 100%; }
 
@@ -202,20 +207,34 @@ html.title-slide body .reveal .slides section section {
   border: none;
   background: none;
   box-shadow: none; }
-.reveal .titleslide {
+.reveal .redslide {
   text-align: left; }
-  .reveal .titleslide header {
+  .reveal .redslide h1 {
+    font-size: 3rem;
+    font-family: "Source San Pro Extra Light"; }
+  .reveal .redslide .timeline div {
+    float: left;
+    font-size: 1.2rem;
+    width: 40%;
+    text-align: center; }
+  .reveal .redslide .timeline div:first-child {
+    width: 12%; }
+  .reveal .redslide .timeline div:last-child {
+    width: 48%; }
+  .reveal .redslide .timeline:after {
+    clear: both;
+    display: table;
+    content: ""; }
+  .reveal .redslide header {
     background: rgba(100, 100, 100, 0.5);
     padding: 2rem 1rem 3rem 1rem; }
-    .reveal .titleslide header div {
+    .reveal .redslide header div {
       float: left; }
-      .reveal .titleslide header div h1 {
-        font-size: 3rem;
-        font-family: "Source San Pro Extra Light";
+      .reveal .redslide header div h1 {
         text-transform: none;
         letter-spacing: -.15rem;
         margin: 0 0 0.5rem 0; }
-      .reveal .titleslide header div h2 {
+      .reveal .redslide header div h2 {
         color: #666;
         font-size: 1.8rem;
         letter-spacing: -.1rem;
@@ -224,15 +243,49 @@ html.title-slide body .reveal .slides section section {
         text-transform: none;
         font-weight: normal;
         font-family: "Source San Pro"; }
-    .reveal .titleslide header .mnemonic {
+    .reveal .redslide header .mnemonic {
       width: 6rem;
       float: left;
       margin: 0 1rem 0 0;
       vertical-align: top; }
-    .reveal .titleslide header:after {
+    .reveal .redslide header:after {
       clear: both;
       display: table;
       content: ""; }
+.reveal .greenslide {
+  font-family: "Source San Pro Extra Light";
+  font-size: 1rem; }
+  .reveal .greenslide .box {
+    width: 12rem;
+    text-align: left;
+    position: absolute; }
+  .reveal .greenslide .intro {
+    font-size: 2.8rem; }
+    .reveal .greenslide .intro span {
+      font-size: 1.8rem; }
+  .reveal .greenslide strong {
+    text-transform: uppercase;
+    color: #1EB1ED;
+    font-family: "Source San Pro"; }
+  .reveal .greenslide .box1 {
+    left: 1rem;
+    top: 23rem; }
+  .reveal .greenslide .box2 {
+    left: 10rem;
+    top: 13rem; }
+  .reveal .greenslide .box3 {
+    left: 18rem;
+    top: 20rem; }
+  .reveal .greenslide .box4 {
+    right: 20rem;
+    top: 16rem; }
+  .reveal .greenslide .box5 {
+    right: 7rem;
+    top: 13rem; }
+  .reveal .greenslide .box6 {
+    right: 0rem;
+    top: 21rem;
+    width: 16rem; }
 
 .adobelogo {
   right: 10%;
