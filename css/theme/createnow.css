@@ -210,21 +210,74 @@ html.title-slide body .reveal .slides section section {
 .reveal .redslide {
   text-align: left; }
   .reveal .redslide h1 {
-    font-size: 3rem;
-    font-family: "Source San Pro Extra Light"; }
+    font-size: 1.5rem;
+    font-family: "Source San Pro Extra Light";
+    text-transform: none;
+    margin-left: 1rem; }
   .reveal .redslide .timeline div {
     float: left;
     font-size: 1.2rem;
     width: 40%;
     text-align: center; }
   .reveal .redslide .timeline div:first-child {
-    width: 12%; }
+    width: 9rem;
+    background-color: #AAE2FE;
+    color: #000000; }
+  .reveal .redslide .timeline div:nth-child(2) {
+    width: 27rem;
+    background-color: #48ACE8;
+    color: #000000; }
   .reveal .redslide .timeline div:last-child {
-    width: 48%; }
+    width: 28rem;
+    background-color: #256085; }
   .reveal .redslide .timeline:after {
     clear: both;
     display: table;
     content: ""; }
+  .reveal .redslide .box {
+    font-size: .8rem;
+    padding-left: 1rem;
+    position: absolute; }
+    .reveal .redslide .box h2 {
+      font-family: "Source San Pro Extra Light";
+      color: #1eb1ed;
+      font-size: 1rem;
+      margin-bottom: .2rem; }
+    .reveal .redslide .box li {
+      padding: 0;
+      margin: 0;
+      line-height: 1.3;
+      color: #1eb1ed;
+      list-style-type: square; }
+      .reveal .redslide .box li span {
+        color: #FFFFFF; }
+    .reveal .redslide .box .mnemonic {
+      width: 4rem;
+      margin: 0; }
+  .reveal .redslide .box1 {
+    left: 1rem;
+    border-left: 1px solid #aae2fe; }
+    .reveal .redslide .box1 h2 {
+      color: #f6ea1d; }
+    .reveal .redslide .box1 li {
+      color: #f6ea1d; }
+      .reveal .redslide .box1 li span {
+        color: #FFFFFF; }
+  .reveal .redslide .box2 {
+    left: 10rem;
+    border-left: 1px solid #48ace8; }
+  .reveal .redslide .box3 {
+    left: 22rem;
+    border-left: 1px solid #48ace8; }
+  .reveal .redslide .box4 {
+    left: 23rem;
+    border-left: 1px solid #48ace8; }
+  .reveal .redslide .box5 {
+    font-size: 1rem;
+    left: 36rem;
+    border-left: 1px solid #256085; }
+    .reveal .redslide .box5 h2 {
+      font-size: 2.2rem; }
   .reveal .redslide header {
     background: rgba(100, 100, 100, 0.5);
     padding: 2rem 1rem 3rem 1rem; }

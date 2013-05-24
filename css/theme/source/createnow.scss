@@ -111,6 +111,8 @@ $codeFont: "Source Code Pro";
 $lightFont: "Source San Pro Extra Light";
 
 $backgroundColor: #000000;
+$bluehighlight: #1EB1ED;
+$yellowhighlight: #F6EA1D;
 
 // Background generator
 @mixin bodyBackground() {
@@ -168,8 +170,10 @@ html.title-slide body .reveal .slides section section{
 	.redslide{
 		text-align: left;
 		h1{
-			font-size: 3rem;
+			font-size: 1.5rem;
 			font-family: $lightFont;
+			text-transform: none;
+			margin-left: 1rem;
 		}
 
 		.timeline{
@@ -180,15 +184,82 @@ html.title-slide body .reveal .slides section section{
 				text-align: center;
 			}
 			div:first-child{
-				width: 12%;
+				width: 9rem;
+				background-color: #AAE2FE;
+				color: #000000;
+			}
+			div:nth-child(2){
+				width: 27rem;
+				background-color: #48ACE8;
+				color: #000000;
 			}
 			div:last-child{
-				width: 48%;
+				width: 28rem;
+				background-color: #256085;
 			}
 			&:after{
 				@include clearfix();
 			}
-		}			
+		}
+
+		.box{
+			font-size: .8rem;
+			padding-left: 1rem;
+			position: absolute;
+			h2{
+				font-family: $lightFont;
+				color: $bluehighlight;
+				font-size: 1rem;
+				margin-bottom: .2rem;
+			}
+			li{
+				padding: 0;
+				margin: 0;
+				line-height: 1.3;
+				color: $bluehighlight;
+				list-style-type: square;
+				span{
+					color: #FFFFFF;
+				}
+			}
+			.mnemonic{
+				width: 4rem;
+				margin: 0;
+			}
+		}
+		.box1{
+			left: 1rem;
+			border-left: 1px solid #AAE2FE;
+			h2{
+				color: $yellowhighlight;
+			}
+			li{
+				color: $yellowhighlight;
+				span{
+					color: #FFFFFF;
+				}
+			}
+		}
+		.box2{
+			left: 10rem;
+			border-left: 1px solid #48ACE8;
+		}
+		.box3{
+			left: 22rem;
+			border-left: 1px solid #48ACE8;
+		}
+		.box4{
+			left: 23rem;
+			border-left: 1px solid #48ACE8;
+		}
+		.box5{
+			font-size: 1rem;
+			left: 36rem;
+			border-left: 1px solid #256085;
+			h2{
+				font-size: 2.2rem;
+			}
+		}					
 
 		header{
 			background: rgba(100,100,100,.5);
