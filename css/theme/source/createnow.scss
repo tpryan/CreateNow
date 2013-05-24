@@ -125,6 +125,12 @@ $yellowhighlight: #F6EA1D;
 @import "../template/theme";
 // ---------------------------------------------
 
+html body{
+	background:url("../../img/background.jpg");
+	background-position:center;
+	background-size: 100% 100%; 
+}
+
 html.red-slide body {
 	background:url("../../img/background-title.jpg");
 	background-position:center;
@@ -165,6 +171,86 @@ html.title-slide body .reveal .slides section section{
 		border: none;
 		background: none;
 		box-shadow: none;
+	}
+	figure{
+
+		font-family: $lightFont;
+		font-size: 1.5rem;
+		float: left;
+		width: 15rem;
+		vertical-align: bottom;
+		figcaption{
+			text-align: right;
+			margin-top: 1.5rem;
+			margin-left: 2rem;
+			margin-right: -1rem; 
+			float: left;
+			text-transform: uppercase;
+		}
+		.icon{
+			float:right;
+			width: 6rem;
+		}
+
+		
+
+	}
+	.main-figure{
+		position: absolute;
+		top: 0;
+		width: 20rem;
+		left: 25rem;
+		img{
+			margin: 0;
+		}
+		figcaption{
+			text-align: center;
+			margin-top: 0;
+			font-size: 2rem;
+
+		}
+	}
+
+	.icon-figure{
+		font-size: 1rem;
+		position: absolute;
+	}
+
+	.icon-settings{
+		top: 0rem;
+	}
+
+	.icon-box{
+		margin-left: 4rem; 
+		margin-right: -1rem;
+		float: left;
+		width: 43rem;
+
+		padding: 1rem;
+		background-color: rgba(0,0,0,.5);
+		br{
+			clear: both;
+		}
+		figure{
+			border: none;
+			float: left;
+			width: 14.2rem;
+			.mnemonic{
+				width: 4rem;
+				float: left;
+			}
+			figcaption{
+				text-align: left;
+				vertical-align: bottom;
+				float: left;
+				font-size: 1rem;
+				margin-top: 2.5rem;
+				margin-left: .5rem;
+				text-transform: none;
+			}
+		}
+
+		
 	}
 
 	.redslide{
@@ -271,6 +357,7 @@ html.title-slide body .reveal .slides section section{
 					text-transform: none;
 					letter-spacing: -.15rem;
 					margin: 0 0 .5rem 0;
+					font-size: 3rem;
 
 				}
 				h2{
