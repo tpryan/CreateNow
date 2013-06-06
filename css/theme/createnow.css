@@ -229,8 +229,7 @@ html.title-slide body .reveal .slides section section {
     float: right;
     width: 6rem; }
 .reveal .icon-chart {
-  height: 35rem;
-  border: 1px solid yellow; }
+  height: 35rem; }
 .reveal .main-figure {
   position: absolute;
   top: 8rem;
@@ -243,6 +242,30 @@ html.title-slide body .reveal .slides section section {
     margin: 0 auto;
     font-size: 2rem;
     width: 100%; }
+.reveal .main-figure.icon-behance {
+  top: 5rem;
+  left: 20rem; }
+  .reveal .main-figure.icon-behance img {
+    width: 20rem;
+    max-width: none; }
+  .reveal .main-figure.icon-behance figcaption {
+    margin-top: -3rem; }
+.reveal .main-figure.icon-community figcaption {
+  margin-top: -2rem; }
+.reveal .main-figure.icon-works {
+  top: 5rem;
+  left: 20rem; }
+  .reveal .main-figure.icon-works img {
+    width: 20rem;
+    max-width: none; }
+  .reveal .main-figure.icon-works figcaption {
+    margin-top: -3rem; }
+.reveal .main-figure.icon-cloud {
+  top: 5rem;
+  left: 20rem; }
+  .reveal .main-figure.icon-cloud img {
+    width: 25rem;
+    max-width: none; }
 .reveal .icon-figure {
   font-size: 1rem;
   position: absolute;
@@ -253,23 +276,52 @@ html.title-slide body .reveal .slides section section {
     position: absolute;
     right: 0rem; }
   .reveal .icon-figure figcaption {
-    font-size: 1rem;
+    font-size: 1.2rem;
     position: absolute;
     right: 45%;
-    text-align: right; }
-.reveal .icon-figure.icon-settings {
-  left: 20%;
-  top: 10rem; }
+    text-align: right;
+    line-height: 1.2; }
 .reveal .icon-figure.icon-cc {
-  left: 5%;
-  top: 25rem; }
+  top: 16rem; }
+  .reveal .icon-figure.icon-cc figcaption {
+    padding-top: 1rem; }
   .reveal .icon-figure.icon-cc img {
-    width: 30%; }
+    width: 25%; }
+.reveal .icon-figure.icon-settings {
+  top: 6rem;
+  left: 15rem; }
+  .reveal .icon-figure.icon-settings figcaption {
+    width: 20rem; }
 .reveal .icon-figure.icon-collab {
-  left: 45%;
-  top: 0; }
+  top: 0rem;
+  right: 11rem; }
+  .reveal .icon-figure.icon-collab figcaption {
+    padding-top: 2rem;
+    right: 2rem; }
   .reveal .icon-figure.icon-collab img {
-    width: 30%; }
+    left: 0; }
+.reveal .icon-figure.icon-community {
+  top: 13rem;
+  right: 1rem; }
+  .reveal .icon-figure.icon-community figcaption {
+    padding-top: 2rem;
+    right: 4rem; }
+  .reveal .icon-figure.icon-community img {
+    left: 0; }
+.reveal .icon-figure.icon-behance {
+  right: 14rem;
+  bottom: 3rem; }
+  .reveal .icon-figure.icon-behance figcaption {
+    padding-top: 2rem;
+    right: 6rem;
+    text-align: left; }
+  .reveal .icon-figure.icon-behance img {
+    left: 0; }
+.reveal .icon-figure.icon-works {
+  bottom: 3rem;
+  left: 11rem; }
+  .reveal .icon-figure.icon-works figcaption {
+    padding-top: 1.5rem; }
 .reveal .icon-box {
   margin-left: 4rem;
   margin-right: -1rem;
