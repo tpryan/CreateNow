@@ -125,21 +125,24 @@ $yellowhighlight: #F6EA1D;
 @import "../template/theme";
 // ---------------------------------------------
 
+
+
+
 html body{
-	background:url("../../img/background.jpg");
+	background-image: url("../../img/background.jpg");
 	background-position:center;
-	background-size: 100% 100%; 
+	background-size: 100% 100%;
 }
 
 html.red-slide body {
-	background:url("../../img/background-title.jpg");
+	background-image: url("../../img/background-title.jpg");
 	background-position:center;
 	background-size: 100% 100%; 
 	
 }
 
 html.green-slide body {
-	background:url("../../img/background-green.jpg");
+	background-image: url("../../img/background-green.jpg");
 	background-position:center;
 	background-size: 100% 100%; 
 	
@@ -195,9 +198,15 @@ html.title-slide body .reveal .slides section section{
 		
 
 	}
+
+	.icon-chart{
+		height: 35rem;
+		border: 1px solid yellow;
+	}
+
 	.main-figure{
 		position: absolute;
-		top: 0;
+		top: 8rem;
 		width: 20rem;
 		left: 25rem;
 		img{
@@ -205,8 +214,9 @@ html.title-slide body .reveal .slides section section{
 		}
 		figcaption{
 			text-align: center;
-			margin-top: 0;
+			margin: 0 auto;
 			font-size: 2rem;
+			width: 100%;
 
 		}
 	}
@@ -214,11 +224,44 @@ html.title-slide body .reveal .slides section section{
 	.icon-figure{
 		font-size: 1rem;
 		position: absolute;
+		min-width: 16rem;
+		min-height: 10rem;
+		img{
+			width: 40%;
+			position: absolute;
+			right: 0rem;
+		}
+		figcaption{
+			font-size: 1rem;
+			position: absolute;
+			right: 45%;
+			text-align: right;
+		}
+
 	}
 
-	.icon-settings{
-		top: 0rem;
+	.icon-figure.icon-settings{
+		left: 20%;
+		top: 10rem;
+		
 	}
+
+	.icon-figure.icon-cc{
+		left: 5%;
+		top: 25rem;
+		img{
+			width: 30%;
+		}
+	}
+
+	.icon-figure.icon-collab{
+		left: 45%;
+		top: 0;
+		img{
+			width: 30%;
+		}
+	}
+
 
 	.icon-box{
 		margin-left: 4rem; 
