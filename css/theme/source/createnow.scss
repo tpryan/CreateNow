@@ -19,7 +19,7 @@
 
 
 @font-face {
-	font-family: 'Source San Pro';
+	font-family: 'Source Sans Pro';
 	src: url('../../lib/font/adobe/sourcesanspro-regular-webfont.eot');
 	src: url('../../lib/font/adobe/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
 		 url('../../lib/font/adobe/sourcesanspro-regular-webfont.woff') format('woff'),
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-	font-family: 'Source San Pro';
+	font-family: 'Source Sans Pro';
 	src: url('../../lib/font/adobe/sourcesanspro-it-webfont.eot');
 	src: url('../../lib/font/adobe/sourcesanspro-it-webfont.eot?#iefix') format('embedded-opentype'),
 		 url('../../lib/font/adobe/sourcesanspro-it-webfont.woff') format('woff'),
@@ -53,9 +53,20 @@
 	font-weight: bold;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Source Sans Pro Bold';
+	src: url('../../lib/font/adobe/sourcesanspro-bold-webfont.eot');
+	src: url('../../lib/font/adobe/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/adobe/sourcesanspro-bold-webfont.woff') format('woff'),
+		 url('../../lib/font/adobe/sourcesanspro-bold-webfont.ttf') format('truetype'),
+		 url('../../lib/font/adobe/sourcesanspro-bold-webfont.svg#SourceCodePro') format('svg');
+
+	font-weight: bold;
+	font-style: normal;
+}
 
 @font-face {
-	font-family: 'Source San Pro Black';
+	font-family: 'Source Sans Pro Black';
 	src: url('../../lib/font/adobe/sourcesanspro-black-webfont.eot');
 	src: url('../../lib/font/adobe/sourcesanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
 		 url('../../lib/font/adobe/sourcesanspro-black-webfont.woff') format('woff'),
@@ -67,7 +78,7 @@
 }
 
 @font-face {
-	font-family: 'Source San Pro Extra Light';
+	font-family: 'Source Sans Pro Extra Light';
 	src: url('../../lib/font/adobe/sourcesanspro-extralight-webfont.eot');
 	src: url('../../lib/font/adobe/sourcesanspro-extralight-webfont.eot?#iefix') format('embedded-opentype'),
 		 url('../../lib/font/adobe/sourcesanspro-extralight-webfont.woff') format('woff'),
@@ -79,7 +90,7 @@
 }
 
 @font-face {
-	font-family: 'Source San Pro Light';
+	font-family: 'Source Sans Pro Light';
 	src: url('../../lib/font/adobe/sourcesanspro-light-webfont.eot');
 	src: url('../../lib/font/adobe/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
 		 url('../../lib/font/adobe/sourcesanspro-light-webfont.woff') format('woff'),
@@ -105,10 +116,11 @@
 
 
 
-$mainFont: "Source San Pro";
-$headingFont: "Source San Pro Black";
+$mainFont: "Source Sans Pro";
+$boldFont: "Source Sans Pro Bold";
+$headingFont: "Source Sans Pro Black";
 $codeFont: "Source Code Pro";
-$lightFont: "Source San Pro Extra Light";
+$lightFont: "Source Sans Pro Extra Light";
 
 $backgroundColor: #000000;
 $bluehighlight: #1EB1ED;
@@ -145,6 +157,14 @@ html.green-slide body {
 	background-image: url("../../img/background-green.jpg");
 	background-position:center;
 	background-size: 100% 100%; 
+	
+}
+
+html.cloudburst-slide body {
+	background-image: url("../../img/background-cloudburst.jpg");
+	background-position:left;
+	background-size: 345px 100%;
+	background-repeat: no-repeat; 
 	
 }
 
@@ -557,6 +577,38 @@ html.title-slide body .reveal .slides section section{
 			right: 0rem;
 			top:21rem;
 			width: 16rem;
+		}
+	}
+
+	.cloudburst{
+		.content{
+			margin-left: 20rem;
+			h1{
+				font-family: $lightFont;
+				color: #ff0000;
+				font-size: 3rem;
+				text-transform: none;
+				text-align: left;
+			}
+			ol{
+				margin-left: 4.5rem;
+				margin-right: .5rem;
+			}
+			li{
+				color: #FF0000;
+				font-family: $lightFont;
+				font-size: 4rem;
+				margin-bottom: 2rem;
+				span{
+					vertical-align: top;
+					font-size: 2rem;
+					color: #FFFFFF;
+					strong{
+						vertical-align: top;
+						font-family: $boldFont;
+					}
+				}	
+			}
 		}
 	}
 
